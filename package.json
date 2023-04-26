@@ -1,11 +1,11 @@
 {
-  "name": "playwright-lighthouse",
-  "version": "3.0.0",
-  "description": "Playwright Lighthouse Audit",
+  "name": "puppeteer-lighthouse-example",
+  "version": "1.0.0",
+  "description": "Puppeteer Lighthouse Example",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --parallel --timeout 30000",
+    "test": "mocha --timeout 60000",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "prettier": "prettier --check \"**/*.{js,md,yml}\"",
     "prettier:fix": "prettier --write \"**/*.{js,md,yml}\""
@@ -18,14 +18,19 @@
     "node": ">=16.x"
   },
   "keywords": [
-    "playwright",
-    "playwright-lighthouse",
-    "playwright-audit"
+    "lighthouse",
+    "puppeteer-lighthouse",
+    "lighthouse-example",
+    "puppeteer-lighthouse-example"
   ],
-  "author": "Abhinaba Ghosh <askabhinaba@gmail.com>",
+  "author": "shoaibmansoor@live.in",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
+    "lighthouse": "^10.1.1",
+    "mocha": "^9.2.2",
+    "open": "^9.1.0",
+    "puppeteer": "^19.11.1",
     "ua-parser-js": "^1.0.2"
   },
   "devDependencies": {
@@ -35,8 +40,7 @@
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "lighthouse": "^10.0.1",
-    "mocha": "9.2.2",
+    "jest": "^28.1.3",
     "playwright-core": "1.19.2",
     "prettier": "^2.6.1"
   }
